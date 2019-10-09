@@ -1,0 +1,128 @@
+﻿/* Navigation - Start */
+
+.nav ul {
+	list-style-type: none;
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+.nav li {
+	text-align: left;
+}
+
+.nav a {
+	display: block;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-bottom: 1px solid #bbb;
+	transition: .3s background-color;
+}
+
+.nav a:hover:not(.active) {
+	background-color: #111;
+}
+.nav a.active {
+	background-color: #0052cc;
+}
+/* Sub Menus */
+.nav li li {
+	font-size: .8em;
+}
+.nav li li a {
+	padding-left: 50px;
+	border-right:none;
+}
+
+/* Style menu for larger screens */
+
+@media screen and (min-width: 650px) {
+	.nav li {
+		float:left;
+		display: inline-block;
+	}
+	.nav a {
+		border-right: 1px solid #bbb;
+		border-bottom: none;
+	}
+	.nav > ul > li:last-child a {
+		border-right: none;
+	}
+	.nav > ul > li {
+		text-align: center;
+	}
+	/* Sub Menus -Start */
+	.nav li ul {
+		position: absolute;
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0s, opacity 0.3s linear;
+		width: inherit;
+	}
+	.nav li li {
+		float:none;
+	}
+	.nav li li a {
+		border-top: 1px solid #bbb;
+		padding-left: 15px;
+	}
+	.nav li li:first-child a {
+		border-top: none;
+	}
+	/* Sub Menus - End */
+	.nav li:hover ul {
+		visibility: visible;
+		opacity: 1;
+	}
+	.nav li ul li {
+		display: block;
+	}
+}
+
+/* Navigation - End */
+
+
+fieldset {
+	border: 1px solid white;
+	margin: auto;
+	float: center;
+	margin-top: 200px;
+	margin-bottom: 100px;
+	lenght: auto;
+}
+#rcorners {
+	border-radius: 25px;
+	background: #73AD21;
+	padding: 20px; 
+	width: 600px;
+	height: auto;    
+}
+h1 {
+	font-size: 500%;
+	text-align: center;
+	color: #0052cc;
+	text-shadow: 2px 2px 0 white,
+               4px 4px 0 #0052cc;
+	}
+h2 {
+	font-size: 250%;
+	text-align: center;
+    	color: white;
+   	 text-shadow: 2px 2px 4px #0052cc;
+} 
+
+p {
+	margin-right; 30px;
+	margin-left: 30px;
+	color: white;
+}
+h4 {
+	color: white;
+	text-align: center;
+	text-decoration: underline; white;
+	margin-top: 50px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Lab Project</title>
+	<meta name="description" content="example page">
+	<meta name="keywords" content="HTML">
+	<meta name="author" content="netlab">
+	<meta http-equiv="refresh" content="120">
+	<style>
+		html { 
+			background: url("https://i.pinimg.com/originals/d3/ec/e9/d3ece90f5fd41a78ad9372f1cb8cd8ab.jpg") no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		  }
+		h3 {
+			color: white;
+			text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px #0052cc;
+			text-align: center;
+		} 
+		#footer {
+			margin: auto;
+			border: 1px solid white;
+			float: left;
+			margin-top: 50px;
+			margin-bottom: 10px;
+			color:  white;
+			}
+		siteimg {
+			float: right;
+			shape: poly;
+			margin-top: auto;
+		}
+		#left_sidebar {
+			float:left;
+		}
+		#right_sidebar {
+			float:right;
+		}
+		#map {
+			margin-top: 150px;
+		}
+		#link {
+			color:  #0052cc;
+		}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script style="text/javascript">
+	</script>
+</head>
+
+
+<body>
+
+<header>
+	<div id="head" class="nav">
+		<ul>
+			<li><a class="active" href="homesite.html">Main page</a></li>
+			<li><a href="#">Hotels - Reservations</a>
+			<ul>
+				<li><a href="hotels.html">Hotels</a></li>
+				<li><a href="reservations.html">Reservations</a></li>
+			</ul>
+			<li style="float:right;list-style-type:none;">
+				<a href="contact.html">Contact Form</a>
+			</li>
+		</ul>
+	</div>
+</header>
+
+<fieldset id="rcorners" style="width:50%; background-color:#333;">
+	<h1>My City</h1>
+	<h2>Tourist Guide</h2><br><br>  
+	<h3>General Information</h3>
+	<p>A city is a large human settlement. Cities generally have extensive systems for housing, transportation, sanitation, utilities, land use, and communication. 
+	Their density facilitates interaction between people, government organisations and businesses, sometimes benefiting different parties in the process.</p>
+<hr color="blue";>
+<p>If you want to navigate to the hotels page click on the image.</p>
+	<img src="http://www.ekathimerini.com/resources/2018-10/hotel_hania_web-thumb-large.jpg" alt="2map" usemap="#Map" />
+<map name="Map" id="Map">
+    <area alt="hotels" title="hotels" href="hotels.html" shape="poly" coords="6,1,396,4,396,331,4,329" />
+</map>
+</center>	
+	</fieldset>
+
+
+
+<footer>
+	<fieldset id="footer" style="width:50%; background-color:#333;">
+		<div id="left_sidebar">
+			<p>To go to the top of this page click  
+			<a id="link" href="#head"> here.</a><br>
+			Contact Information: 
+			<a id="link" href="mailto: panagiotispr1997@gmail.com"> e-mail </a>.</p></div>
+		<div id="right_sidebar"><img id="siteimg" src="https://www.elegantnails.gr/wps/wp-content/uploads/2018/05/syntelestes-istoselidas.png" alt="image" height="70"; width="90";></div>
+	</fieldset>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Lab Project</title>
+	<meta name="description" content="example page">
+	<meta name="keywords" content="HTML">
+	<meta name="author" content="netlab">
+	<meta http-equiv="refresh" content="120">
+	<style>
+		html { 
+			background: url("https://cdn.theculturetrip.com/wp-content/uploads/2017/09/greece-1594689_1920.jpg") no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		h3 {
+			color: white;
+			text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px #0052cc;
+			text-align: center;
+		} 
+		#footer {
+			margin: auto;
+			border: 1px solid white;
+			float: left;
+			margin-top: 50px;
+			margin-bottom: 10px;
+			color:  white;
+		}
+		siteimg {
+			float: right;
+			shape: poly;
+			margin-top: auto;
+		}
+		#left_sidebar {
+			float:left;
+		}
+		#right_sidebar {
+			float:right;
+		}
+		#map {
+			margin-top: 150px;
+		}
+		#link {
+			color:  #0052cc;
+		}
+		label {
+		color: white;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript">
+	function validateForm(email, num, message) {
+				var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+				//var numformat = /^Π\d\d\d\d\d$/; same expression as the one below
+				var numformat = /^69\d{8}$/;
+				if(!email.match(mailformat))
+				{
+					alert("Wrong email address!");
+					return false;
+				}
+				else if(!num.match(numformat)) 
+				{
+					alert("Wrong phone number (must be 69-12345678)!");
+					return false;
+				}
+				else if(document.getElementById("message").value == " ")
+				{	
+					alert("Message can't be empty!");
+					return false;
+				}
+				else
+				{
+					alert("Message sent!");
+					return true;
+				}
+		}
+	</script>
+</head>
+<body>
+
+<header>
+	<div id="head" class="nav">
+		<ul>
+			<li><a href="homesite.html">Main page</a></li>
+			<li><a href="#">Hotels - Reservations</a>
+			<ul>
+				<li><a href="hotels.html">Hotels</a></li>
+				<li><a href="reservations.html">Reservations</a></li>
+			</ul>
+			<li style="float:right;list-style-type:none;">
+				<a class="active"  href="contact.html">Contact Form</a>
+			</li>
+		</ul>
+	</div>
+</header>
+
+<fieldset id="rcorners" style="width:50%; background-color:#333;">
+	<h1>My City</h1>
+	<h2>Tourist Guide</h2><br><br>  
+	<h3>Contct Form</h3> 
+	<hr color="blue"; >
+	<center><p>If you want faster response better send message to my private <a id="link" href="mailto: panagiotispr1997@gmail.com"> e-mail </a>.</p></p></center>
+	<hr color="blue"; >
+	<center>
+	<form name="myForm" action="checker1.php" onsubmit='return validateForm(document.getElementById("email").value, document.getElementById("num").value, document.getElementById("message").value);' method="post">
+		<label for="name1">Name:</label>
+		<br/>
+		<input type="text" name="name1" id="name1" required="required">
+		<br/>
+		<label for="name2">Surname:</label>
+		<br/>
+		<input type="text" name="name2" id="name2" required="required">
+		<br/>
+		<label for="email">E-mail:</label>
+		<br/>
+		<input name="text" id="email" required="required">
+		<br/>
+		<label for="num">Phone number:</label>
+		<br/>
+		<input type="text" name="num" id="num">
+		<br/>
+		<label for="message">Your comments:</label>
+		<br/>
+		<textarea id="message" name="message" rows="10" cols="50" required="required">
+		</textarea>
+		<br>
+		<input type="submit" value="Send Message"/>
+	</form>
+	</center>	
+</fieldset>
+
+	
+	
+<footer>
+	<fieldset id="footer" style="width:50%; background-color:#333;">
+		<div id="left_sidebar">
+			<p>To go to the top of this page click.  
+			<a id="link" href="#head"> here.</a><br>
+			Contact Information: 
+			<a id="link" href="mailto: panagiotispr1997@gmail.com"> e-mail </a>.</p></div>
+		<div id="right_sidebar"><img id="siteimg" src="https://www.elegantnails.gr/wps/wp-content/uploads/2018/05/syntelestes-istoselidas.png" alt="image" height="70"; width="90";></div>
+	</fieldset>
+</footer>
+
+</body>
+</html>
